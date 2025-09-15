@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-primary: "DM Sans", sans-serif;
+  --font-secondary: "Barlow", sans-serif;
+
+  --color-primary: #121315;
+  --color-secondary: #666666;
+  --color-accent: #ffca3b;
+  --color-border: #d7d7d7;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+
+  --shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
+
+  --background-image-hero: url("/assets/img/hero/bg.jpg");
+}
+
+body {
+  @apply font-secondary text-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-primary text-primary;
+}
+
+.h1 {
+  @apply text-[40px] xl:text-[54px] uppercase font-black leading-[1.1];
+}
+
+.h2 {
+  @apply text-[36px] xl:text-[46px] capitalize font-bold leading-[1.3] xl:leading-[56px];
+}
+
+.h3 {
+  @apply text-3xl font-bold;
+}
+
+.h4 {
+  @apply text-2xl font-semibold;
+}
