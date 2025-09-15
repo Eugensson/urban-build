@@ -1,3 +1,7 @@
 export const Contact = () => {
-  return <section>Contact</section>;
+  return (
+    <section className="h-screen bg-indigo-200" id="contact">
+      Contact
+    </section>
+  );
 };

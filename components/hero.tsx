@@ -1,3 +1,3 @@
 export const Hero = () => {
-  return <section>Hero</section>;
+  return <section className="h-screen bg-blue-200">Hero</section>;
 };

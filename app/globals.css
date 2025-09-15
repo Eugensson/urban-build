@@ -24,6 +24,10 @@ body {
   @apply font-secondary text-secondary;
 }
 
+.container {
+  @apply px-3.75 w-full max-w-300 mx-auto;
+}
+
 h1,
 h2,
 h3,

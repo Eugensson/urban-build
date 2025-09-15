@@ -1,3 +1,7 @@
 export const Work = () => {
-  return <section>Work</section>;
+  return (
+    <section className="h-screen bg-red-200" id="projects">
+      Work
+    </section>
+  );
 };
