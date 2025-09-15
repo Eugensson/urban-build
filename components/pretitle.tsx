@@ -5,7 +5,7 @@ interface PretitleProps {
   centered?: boolean;
 }
 
-export const Pretitle = ({ text, centered }: PretitleProps) => {
+export const Pretitle = ({ text, centered = false }: PretitleProps) => {
   return (
     <div
       className={cn(

@@ -11,7 +11,9 @@ export const About = () => {
           <div className="flex-1">
             <div className="max-w-135">
               <Pretitle text="About us" />
-              <h2 className="h2 mb-6">Focused on Exellence In Every Project</h2>
+              <h2 className="h2 mb-6 text-primary">
+                Focused on Exellence In Every Project
+              </h2>
               <p className="mb-11 xl:text-lg">
                 Our unweavering commitment to exellence drivers every project we
                 undertake. From concept to completion, we meticulously craft
