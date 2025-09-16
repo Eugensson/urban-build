@@ -127,3 +127,34 @@ export const serviceData = [
     ],
   },
 ];
+
+export const workData = [
+  {
+    id: "1",
+    img: "/assets/img/work/restoration.jpg",
+    name: "restoration",
+    description: "Quality building restoration.",
+    href: "#",
+  },
+  {
+    id: "2",
+    img: "/assets/img/work/construction.jpg",
+    name: "construction",
+    description: "Strong and safe construction.",
+    href: "#",
+  },
+  {
+    id: "3",
+    img: "/assets/img/work/renovation.jpg",
+    name: "renovation",
+    description: "Modern renovation services.",
+    href: "#",
+  },
+  {
+    id: "4",
+    img: "/assets/img/work/consulting.jpg",
+    name: "consulting",
+    description: "Expert project consulting.",
+    href: "#",
+  },
+];
