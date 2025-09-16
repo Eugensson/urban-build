@@ -158,3 +158,42 @@ export const workData = [
     href: "#",
   },
 ];
+
+export const testimonialData = [
+  {
+    id: "1",
+    img: "/assets/img/testimonials/avatar1.jpg",
+    name: "Emily Johnson",
+    text: "Urban Build turned our home into a modern space with care and detail. We are beyond happy with the results.",
+  },
+  {
+    id: "2",
+    img: "/assets/img/testimonials/avatar2.jpg",
+    name: "Michael Smith",
+    text: "The team was professional and precise, delivering our office project on time and on budget without issues.",
+  },
+  {
+    id: "3",
+    img: "/assets/img/testimonials/avatar3.jpg",
+    name: "Sarah Williams",
+    text: "From planning to final details, everything was smooth. Our family now enjoys a new living space we truly love.",
+  },
+  {
+    id: "4",
+    img: "/assets/img/testimonials/avatar4.jpg",
+    name: "David Miller",
+    text: "A reliable company that kept us updated each step. Their process was organized, and the quality was superb.",
+  },
+  {
+    id: "5",
+    img: "/assets/img/testimonials/avatar5.jpg",
+    name: "Olivia Brown",
+    text: "The renovation added real value to our property. Their skill and craftsmanship impressed us in every detail.",
+  },
+  {
+    id: "6",
+    img: "/assets/img/testimonials/avatar6.jpg",
+    name: "Richard Davis",
+    text: "Working with Urban Build was stress-free. They combined creativity and skill to deliver excellent results.",
+  },
+];
