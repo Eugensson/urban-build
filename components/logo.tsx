@@ -3,9 +3,20 @@
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 
-export const Logo = () => {
+import { cn } from "@/lib/utils";
+
+interface LogoProps {
+  className?: string;
+}
+
+export const Logo = ({ className }: LogoProps) => {
   return (
-    <ScrollLink spy smooth to="home" className="cursor-pointer">
+    <ScrollLink
+      spy
+      smooth
+      to="home"
+      className={cn("cursor-pointer", className)}
+    >
       <Image
         src="/assets/logo.svg"
         alt="Urban Build Logo"
