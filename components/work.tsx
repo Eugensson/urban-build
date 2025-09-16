@@ -12,7 +12,9 @@ export const Work = () => {
       <div className="container">
         <div className="max-w-135 mx-auto xl:mb-20 text-center">
           <Pretitle text="Our Work" centered />
-          <h2 className="h2 mb-3 capitalize">Discover our projects</h2>
+          <h2 className="h2 mb-3 text-primary capitalize">
+            Discover our projects
+          </h2>
           <p className="mb-11 max-w-120 mx-auto xl:text-lg">
             Providing expert services designed to deliver quality and innovation
             in every project we undertake.

@@ -197,3 +197,66 @@ export const testimonialData = [
     text: "Working with Urban Build was stress-free. They combined creativity and skill to deliver excellent results.",
   },
 ];
+
+export const faqItemsData = [
+  {
+    id: "1",
+    question: "What services does Urban Build offer?",
+    answer:
+      "Urban Build offers residential and commercial construction, renovations, remodeling, and design-build solutions tailored to your needs.",
+  },
+  {
+    id: "2",
+    question: "How experienced is Urban Build?",
+    answer:
+      "Urban Build has years of experience and hundreds of completed projects, delivering high-quality and innovative construction solutions.",
+  },
+  {
+    id: "3",
+    question: "Does Urban Build provide custom designs?",
+    answer:
+      "Yes, we create custom designs that are functional, stylish, and tailored to your vision and lifestyle.",
+  },
+  {
+    id: "4",
+    question: "Is Urban Build licensed and insured?",
+    answer:
+      "Urban Build is fully licensed and insured, ensuring compliance with all regulations and safety standards.",
+  },
+  {
+    id: "5",
+    question: "What areas does Urban Build serve?",
+    answer:
+      "We serve multiple regions, offering professional construction services locally and in surrounding areas.",
+  },
+  {
+    id: "6",
+    question: "How long does a typical project take?",
+    answer:
+      "Project timelines vary, but Urban Build provides clear schedules and regular updates to ensure efficient completion.",
+  },
+  {
+    id: "7",
+    question: "Can Urban Build handle renovations and remodeling?",
+    answer:
+      "Yes, we specialize in renovations and remodeling, transforming spaces into modern, functional, and stylish areas.",
+  },
+  {
+    id: "8",
+    question: "Does Urban Build offer eco-friendly construction options?",
+    answer:
+      "Urban Build uses sustainable materials and energy-efficient solutions to minimize environmental impact.",
+  },
+  {
+    id: "9",
+    question: "How can I get a quote for my project?",
+    answer:
+      "Request a personalized quote via our website or phone, and we’ll provide a detailed estimate for your project.",
+  },
+  {
+    id: "10",
+    question: "Why choose Urban Build for my construction project?",
+    answer:
+      "Urban Build combines expertise, innovation, and reliability to deliver high-quality construction with client satisfaction.",
+  },
+];

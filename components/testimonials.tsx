@@ -11,7 +11,7 @@ export const Testimonials = () => {
         <div className="relative flex flex-col xl:flex-row">
           <div className="flex-1 max-w-121 xl:pt-13.5 mb-12 xl:mb-0">
             <Pretitle text="Testimonials" />
-            <h2 className="h2 mb-6 capitalize">
+            <h2 className="h2 mb-6 text-primary capitalize">
               Build on trust, proven by results
             </h2>
             <p className="mb-10 max-w-105 xl:text-lg">

@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section className="h-screen bg-indigo-200" id="contact">
+    <section className="pt-16 xl:pt-32" id="contact">
       Contact
     </section>
   );
