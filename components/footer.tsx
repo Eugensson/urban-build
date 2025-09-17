@@ -1,3 +1,5 @@
+"use client";
+
 import {
   RiMailFill,
   RiPhoneFill,
@@ -5,13 +7,22 @@ import {
   RiMapPin2Fill,
 } from "react-icons/ri";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import { Logo } from "@/components/logo";
 import { Socials } from "@/components/socials";
 
+import { fadeIn } from "@/lib/variants";
+
 export const Footer = () => {
   return (
-    <footer className="mt-16 xl:mt-32 bg-primary">
+    <motion.footer
+      variants={fadeIn("up", 0.1)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.1 }}
+      className="mt-16 xl:mt-32 bg-primary"
+    >
       <div className="container">
         <ul className="py-16 xl:py-25 flex flex-col xl:flex-row gap-15 xl:gap-7.5">
           <li className="flex-1">
@@ -86,6 +97,6 @@ export const Footer = () => {
           iconStyles="hover:text-accent transition-colors duration-300"
         />
       </div>
-    </footer>
+    </motion.footer>
   );
 };

@@ -1,11 +1,11 @@
 "use client";
 
-// import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { FaqItem } from "@/components/faq-item";
 import { Pretitle } from "@/components/pretitle";
 
-// import { fadeIn } from "@/lib/variants";
+import { fadeIn } from "@/lib/variants";
 import { faqItemsData } from "@/lib/data";
 
 export const faqItemVariants = {
@@ -21,7 +21,13 @@ export const Faq = () => {
   return (
     <section className="pt-16 xl:pt-32">
       <div className="container">
-        <div className="text-center max-w-135 mx-auto xl:mb-20">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          className="text-center max-w-135 mx-auto xl:mb-20"
+        >
           <Pretitle text="F.A.Q." centered />
           <h2 className="h2 mb-3 text-primary capitalize">
             Got questions? We&apos;ve got the answers.
@@ -31,12 +37,19 @@ export const Faq = () => {
             the most common questions to help you make smart and confident
             decisions about your construction project.
           </p>
-        </div>
+        </motion.div>
         <ul className="w-full flex flex-col">
           {faqItemsData.map((item, index) => (
-            <li key={index}>
+            <motion.li
+              key={index}
+              variants={faqItemVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.8 }}
+              custom={index}
+            >
               <FaqItem question={item.question} answer={item.answer} />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>

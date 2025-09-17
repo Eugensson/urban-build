@@ -1,16 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
 
 import { Pretitle } from "@/components/pretitle";
 
 import { workData } from "@/lib/data";
+import { fadeIn } from "@/lib/variants";
 
 export const Work = () => {
   return (
     <section className="pt-16 xl:pt-32" id="projects">
       <div className="container">
-        <div className="max-w-135 mx-auto xl:mb-20 text-center">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.2 }}
+          className="max-w-135 mx-auto xl:mb-20 text-center"
+        >
           <Pretitle text="Our Work" centered />
           <h2 className="h2 mb-3 text-primary capitalize">
             Discover our projects
@@ -19,9 +29,15 @@ export const Work = () => {
             Providing expert services designed to deliver quality and innovation
             in every project we undertake.
           </p>
-        </div>
+        </motion.div>
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+      <motion.ul
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }}
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4"
+      >
         {workData.map(({ id, img, name, description, href }) => (
           <li
             key={id}
@@ -53,7 +69,7 @@ export const Work = () => {
             </div>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </section>
   );
 };

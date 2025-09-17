@@ -1,13 +1,24 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { RiChat1Line, RiMapPin2Line, RiSmartphoneLine } from "react-icons/ri";
 
 import { Socials } from "@/components/socials";
 import { ContactForm } from "@/components/contact-form";
 
+import { fadeIn } from "@/lib/variants";
+
 export const Contact = () => {
   return (
     <section className="pt-16 xl:pt-32" id="contact">
-      <div className="container">
+      <motion.div
+        className="container"
+        variants={fadeIn("up", 0.1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }}
+      >
         <div className="p-4 xl:px-22.5 xl:py-9 w-full xl:h-182.5 shadow-custom border-t-4 border-accent">
           <div className="h-full flex flex-col xl:flex-row gap-10 xl:gap-22.5">
             <div className="w-full h-160 xl:max-w-100 xl:pr-17.5 xl:border-r xl:border-border/40">
@@ -88,7 +99,7 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
